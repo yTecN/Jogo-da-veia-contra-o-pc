@@ -42,10 +42,17 @@ while True:
         if j == pc:
             print(f'Vez do PC...')
             sleep(1.5)
-            jogo.atualiza(pc_jogada(jogo.layout, pc, possiveis_jogadas(jogo.layout)), j)
+            pc_jogada = jogada_pc(jogo.layout, pc, possiveis_jogadas(jogo.layout))
+            jogo.atualiza(pc_jogada, j)
             jogo.n_jogadas += 1
         else:
+            try:
+                if pc_jogada in range(1, 10):
+                    print(f'Jogada do pc: {pc_jogada}')
+            except:
+                pass
             jogo.jogada(j)
+        os.system('cls')
         jogo.cabecalho('Jogo da Veia')
         jogo.exibe()
         if verifica_vitoria(jogo.layout) or jogo.n_jogadas >= 9:

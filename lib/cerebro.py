@@ -6,7 +6,7 @@ def possiveis_jogadas(tabuleiro):
                 pos_disp.append(pos)
     return pos_disp
 
-def pc_jogada(tabuleiro, pc, pos_disp=[]):
+def jogada_pc(tabuleiro, pc, pos_disp=[]):
     from random import randint, choice
     if pc == 'O':
         player = 'X'
