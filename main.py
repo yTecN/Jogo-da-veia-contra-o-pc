@@ -42,12 +42,12 @@ while True:
         if j == pc:
             print(f'Vez do PC...')
             sleep(1.5)
-            pc_jogada = jogada_pc(jogo.layout, pc, possiveis_jogadas(jogo.layout))
-            jogo.atualiza(pc_jogada, j)
+            jogada_pc = pc_jogada(jogo.layout, pc, possiveis_jogadas(jogo.layout))
+            jogo.atualiza(jogada_pc, j)
             jogo.n_jogadas += 1
         else:
             try:
-                if pc_jogada in range(1, 10):
+                if jogada_pc in range(1, 10):
                     print(f'Jogada do pc: {pc_jogada}')
             except:
                 pass
