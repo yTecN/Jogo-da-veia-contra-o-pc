@@ -48,7 +48,7 @@ while True:
         else:
             try:
                 if jogada_pc in range(1, 10):
-                    print(f'Jogada do pc: {pc_jogada}')
+                    print(f'Jogada do pc: {jogada_pc}')
             except:
                 pass
             jogo.jogada(j)
