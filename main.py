@@ -6,7 +6,7 @@ import os
 
 jogo = jogo()
 
-jogo.cabecalho('Escolha seu jogadorolo')
+jogo.cabecalho('Escolha seu jogador')
 print('''
 [ 1 ] X
 [ 2 ] O
